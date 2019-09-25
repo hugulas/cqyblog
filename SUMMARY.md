@@ -4,5 +4,5 @@
 
 ## Python
 
-* [Python如何远程调试](python/python-ru-he-yuan-cheng-tiao-shi.md)
+* [Python如何远程调试](python/python-remotedebug.md)
 

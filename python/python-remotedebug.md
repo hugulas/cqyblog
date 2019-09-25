@@ -8,11 +8,11 @@ Google了下这个问题？如果不用Pycharm远程调试的话，有几个办�
 
 Stack Overflow建议使用发信号的办法，操作有些繁琐，自己照着写了debug.py，不是所有的时候都好用，有的时候会遇到python output显示User Defined Signal，然后直接退出。
 
-{% embed url="https://stackoverflow.com/questions/132058/showing-the-stack-trace-from-a-running-python-application" %}
+{% embed url="https://stackoverflow.com/questions/132058/showing-the-stack-trace-from-a-running-python-application" caption="Stack Overflow send user signal" %}
 
-我也试过其他的方案。
+我也试过其他的方案。[https://gist.github.com/reywood/e221c4061bbf2eccea885c9b2e4ef496\#file-how-to-md](https://gist.github.com/reywood/e221c4061bbf2eccea885c9b2e4ef496#file-how-to-md)
 
-{% embed url="https://gist.github.com/reywood/e221c4061bbf2eccea885c9b2e4ef496" caption="来自gist的方法：" %}
+{% embed url="https://gist.github.com/reywood/e221c4061bbf2eccea885c9b2e4ef496" caption="来自gist的方法：https://gist.github.com/reywood/e221c4061bbf2eccea885c9b2e4ef496\#file-how-to-md" %}
 
 和下面代码段描述的那样，我首先pip安装了pyrasite, 然后调用pyrasite-shell来调试相应的进程。我把gist中的代码复制黏贴到了python交互窗口中，就打出了每个线程的调用栈。
 
