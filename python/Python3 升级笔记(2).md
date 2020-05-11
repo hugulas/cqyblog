@@ -57,3 +57,12 @@ Python2中如果你把 map 和 filter 函数返回值当 list 用，随机访问
 
 
 
+#### 改变15:获得脚本当前的路径
+
+```python
+python 2:os.path.dirname(pathlib.Path(__file__).parent.absolute())
+python 3:pathlib.Path(__file__).parent.absolute()
+```
+
+
+
