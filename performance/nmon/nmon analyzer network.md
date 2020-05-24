@@ -74,17 +74,17 @@ hugulas@hugulas-PC:/sys/devices$ cat /sys/class/net/enp1s0/mtu
 
 从这个页面，我们从按照卡来划分的直方图中来看到流量集中在千兆卡上，读和写的峰值分别是90MB和110MB，这张网卡是张千兆网卡1000Gbps（125MB/s），已经接近它的极限了。
 
-![image-20200524162433102](/Users/cqy/Library/Application Support/typora-user-images/image-20200524162433102.png)
+![image-20200524162433102](/Users/cqy/Box Sync/cqyblog/performance/nmon/image-20200524162433102.png)
 
 从分时图也可以看到，瓶颈出现时，网络流量达到峰值。
 
-![](/Users/cqy/Library/Application Support/typora-user-images/image-20200524161732846.png)
+![](/Users/cqy/Box Sync/cqyblog/performance/nmon/image-20200524161732846.png)
 
 如果包的大小比较小，那么这张卡的最大吞吐量会更差。（你的包的大小受制于MTU大小，最大不能大于MTU。所以，一般认为MTU=9000的配置，对于高速网卡来说，性能更好）
 
 我们可以看下它的包大小。我没有拿到NETSIZE工作表，但是可以根据NETPACKETS算出包大小，峰值时，读写在210K/s，那么包大小大约在428到523Byte之间。包还是比较小的。
 
-![image-20200524162703826](/Users/cqy/Library/Application Support/typora-user-images/image-20200524162703826.png)
+![image-20200524162703826](/Users/cqy/Box Sync/cqyblog/performance/nmon/image-20200524162703826.png)
 
 
 
